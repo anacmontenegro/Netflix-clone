@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.background {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 5%,
+        rgba(0, 0, 0, 0.2) 20%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 1) 100%
+        ),
+        url(./img/banner.jpg);
+    background-size: cover;
+    padding: 0.26rem 0.75rem 0 0.75rem;
+  }
+
+.appbg {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.banner {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+  
+.bannerfilm {
+    width: 500px;
+    margin-left: -106px;
+}
+
+.bannerdescrip {
+    font-size: 1.2vw;
+    color: white;
+    line-height: 1.25;
+    padding: 1rem 13rem 0 0;
+    margin-left: -106px;
+}
+
+.bannerbtns {
+    margin-top: 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -106px;
+}
+
+.watchbtn {
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    font-family: inherit;
+    font-size: 100%;
+    border: solid transparent;
+}
+  
+.watchbtn:hover {
+    background-color: rgba(255, 255, 255, 0.777);
+}
+
+.infobtn {
+    color: white;
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.125rem;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-family: inherit;
+    font-size: 100%;
+    border: solid transparent;
+}
+
+.infobtn:hover {
+    background-color: rgba(109, 109, 110, 0.525);
+}
+
+.navmenu {
+    margin-left: -55px;
+}
+
+.navmenuitem {
+    margin-top: 10px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+
+.navaccount {
+    margin-top: 10px;
+    float: right;
+    display: inline-block;
+    text-align: center;
+}
+
+.navmenuitem a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.navaccount a {
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+}
+
+.navmenuitem :hover {
+    color: rgba(255, 255, 255, 0.777);
+}
+
+.navaccount :hover {
+    color: rgba(255, 255, 255, 0.777);
+}
+
+.categories {
+    margin-top:30px;
+}
+
+.categorytitle {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.categorytitle2 {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.listline {
+    margin-left: 16px;
+    margin-top: 15px;
+}
+
+.listitem {
+    margin-right: 7px;
+    display: inline-block;
+}
+
+.listitem img {
+    border-radius: 0.125rem;
+}
+
+.carousel-cell {
+    width: 20%;
+    height: 160px;
+    margin-right: 10px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+   }
+
+.wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+}
+   
+.wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+}
+   
+.wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+   
+.wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+   
+.wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+   
+.wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+   
+@media only screen and (max-width: 600px) {
+    a.arrow__btn {
+    display: none;
+    }
+}
+
+.footer {
+    margin-top:80px;
+}
+
+.mediaicons {
+    margin-left: 42px;
+}
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.gridwrapper li {
+    line-height: 150%;
+}
+
+.gridwrapper a {
+    text-decoration: none;
+    font-family: Arial;
+    color: rgba(109, 109, 110);
+    font-size: 13px;
+}
+
+.gridwrapper a:hover {
+    text-decoration: underline;
+}
+
+.copyrights {
+    font-family: Arial;
+    color: rgba(109, 109, 110);
+    font-size: 11px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.copyrightsalign {
+    margin-left: 42px;
+}
